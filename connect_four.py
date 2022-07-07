@@ -3,6 +3,9 @@ import pygame
 import sys
 import math
 
+
+jony = 'just making sure it work'
+
 BLUE = (0,0,255)
 YELLOW = (255,255,0)
 BLACK = (0,0,0)
