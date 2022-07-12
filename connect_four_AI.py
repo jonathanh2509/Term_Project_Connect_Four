@@ -247,7 +247,11 @@ while not game_over:
 				posx = event.pos[0]
 				col = int(math.floor(posx/SQUARESIZE))
 
-				if is_valid_location(board, col):
+				if is_valid_location(board, col) == False:
+					label = myfont.render("Invalid Move", 1, RED)
+					screen.blit(label, (30,10))
+
+				else:
 					row = get_next_open_row(board, col)
 					drop_piece(board, row, col, PLAYER_PIECE)
 
