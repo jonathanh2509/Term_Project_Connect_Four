@@ -14,7 +14,7 @@ BG = pygame.image.load("assets/Background.png")
 def get_font(size): # Returns Press-Start-2P in the desired size
     return pygame.font.Font("assets/font.ttf", size)
 
-def play():
+def play(): # run user vs user
     while True:
         PLAY_MOUSE_POS = pygame.mouse.get_pos()
 
@@ -41,7 +41,7 @@ def play():
 
         pygame.display.update()
     
-def options():
+def options(): #user vs AI
     while True:
         # OPTIONS_MOUSE_POS = pygame.mouse.get_pos()
 
